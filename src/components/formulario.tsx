@@ -39,7 +39,7 @@ const Formulario = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const target = e.target as HTMLInputElement;
-    const { name, value, type, checked } = target;
+    const { name, value, checked } = target;
 
     if (name in formData.coches) {
       setFormData(prev => ({
